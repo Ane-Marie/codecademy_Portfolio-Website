@@ -27,7 +27,7 @@ body {
   display: grid;
   grid-template-columns: 0.25fr 300px 3fr 0.25fr;
   grid-template-areas:
-    "header header header header"
+    " . header header . "
     " . nav main . ";
 }
 header {
@@ -37,6 +37,7 @@ header {
   align-items: flex-end;
   padding-right: 0.5rem;
   font-family: "Genos", sans-serif;
+  font-size: 1.3rem;
   color: rgb(152, 149, 149);
 }
 header p {
@@ -60,13 +61,13 @@ header p {
     conic-gradient(from var(--neon-deg), var(--gradient-neon)) border-box; /* background gradient & border gradient */
   animation: neon 10s infinite; /* border animation */
 }
-/* profile picture eye effect: */
-#anchor {
+/* profile picture moving eyes: */
+.anchor {
   width: 150px;
   position: relative;
 }
-#eyes,
-#eyes img {
+.eyes,
+.eyes img {
   position: absolute;
 }
 .left-eye {
@@ -119,19 +120,20 @@ main {
   flex-direction: column;
   gap: 1rem;
 }
-#about {
+.about-me {
+  max-width: 800px;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-#about,
-#projects,
-#skills {
+.about-me,
+.projects,
+.skills {
   padding: 3rem 1rem;
 }
-#projects h2,
-#skills h2 {
+.projects h2,
+.skills h2 {
   margin-bottom: 1.5rem;
 }
 .my-projects,
@@ -275,7 +277,7 @@ main {
   .sidenav {
     width: 250px;
   }
-  #anchor {
+  .anchor {
     width: 100px;
   }
   .left-eye {
@@ -331,7 +333,7 @@ main {
   .sidenav h2 {
     display: none;
   }
-  #anchor {
+  .anchor {
     width: 50px;
   }
   .left-eye {
@@ -402,7 +404,7 @@ main {
   .sidenav h2 {
     display: none;
   }
-  #anchor {
+  .anchor {
     width: 50px;
   }
   .left-eye {

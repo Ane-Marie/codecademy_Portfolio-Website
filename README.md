@@ -23,4 +23,4 @@ Personal portfolio site, a static website meant to showcase the projects build b
 
 ### How to use
 
-Check out the [Live Demo](https://ane-marie.github.io/codecademy_Portofolio-Website)
+Check out the [Live Demo](https://ane-marie.github.io/codecademy_Portfolio-Website/)

@@ -1,8 +1,8 @@
-# Portofolio Website
+# Portfolio Website
 
 This project is part of Codecademy Full Stack Engineer Career Path.
 
-Personal portfolio site, a static website meant to showcase the projects build by the learner. Typically, a portfolio website will have a main page that features different projects and another page that contains contact information, in case someone wants to reach out to you.
+Personal portfolio site, a static website meant to showcase the projects built by the learner. Typically, a portfolio website will have a main page that features different projects and another page that contains contact information, in case someone wants to reach out to you.
 
 ## Project Objectives
 

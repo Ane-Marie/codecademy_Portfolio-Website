@@ -157,6 +157,9 @@ main {
     conic-gradient(from var(--neon-deg), var(--gradient-neon)) border-box;
   animation: neon 10s infinite;
 }
+.projects-card-icon {
+  position: absolute;
+}
 .projects-card-img {
   width: 100%;
   height: 100%;
@@ -226,6 +229,11 @@ main {
 }
 .skills-card:hover .skills-card-flip {
   transform: rotateY(180deg);
+}
+.skills-card-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 .skills-card-front,
 .skills-card-back {

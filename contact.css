@@ -31,14 +31,16 @@ body {
   color: var(--grey);
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 header {
-  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 0.5rem;
   font-family: "Genos", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
   color: rgb(152, 149, 149);
 }
 header button {
@@ -234,6 +236,9 @@ textarea {
 @media (max-width: 38rem /* 608px */) {
   body {
     font-size: 0.75rem;
+  }
+  header {
+    font-size: 1.2rem;
   }
   header button span {
     display: none;

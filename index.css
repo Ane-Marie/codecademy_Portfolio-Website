@@ -1,7 +1,7 @@
 :root {
   --grey: rgb(202, 202, 197);
   --blue: rgb(59, 98, 190);
-  --gradient-neon: blue, red, purple, green, blue; /* border gradient */
+  --gradient-neon: blue, red, purple, green, #0000ff; /* border gradient */
   --gradient-blue: rgb(15, 15, 47), rgb(4, 25, 91);
 }
 @property --neon-deg {
@@ -35,9 +35,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-right: 0.5rem;
   font-family: "Genos", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  line-height: 1;
   color: rgb(152, 149, 149);
 }
 header p {
@@ -156,9 +156,11 @@ main {
   background: linear-gradient(var(--gradient-blue)) padding-box,
     conic-gradient(from var(--neon-deg), var(--gradient-neon)) border-box;
   animation: neon 10s infinite;
+  cursor: pointer;
 }
 .projects-card-icon {
   position: absolute;
+  left: 5px;
 }
 .projects-card-img {
   width: 100%;
@@ -221,6 +223,7 @@ main {
   height: 250px;
   background-color: transparent;
   perspective: 1000px;
+  cursor: pointer;
 }
 .skills-card-flip {
   position: relative;
@@ -372,6 +375,10 @@ main {
 }
 
 @media (max-width: 38rem /* 608px */) {
+  header {
+    align-items: center;
+    font-size: 1.2rem;
+  }
   .sidenav {
     justify-content: center;
   }
